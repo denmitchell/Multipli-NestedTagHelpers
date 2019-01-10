@@ -1,0 +1,2 @@
+# MultiplyNestedTagHelpers
+This is a sample project demonstrating nesting of multiple tag helpers.  A table element with thead, tbody, tr, th, and td child elements is generated from a set of custom tag helpers.  The project is designed to focus on the nesting of tag helpers (and communication between context classes), rather than the recommended use of tag-helper-related classes and methods for generating HTML.
