@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Table from Multiply Nested Tag Helpers</h1>
+    <my-table id="table1">
+        <my-table-header id="thead1">
+            <my-row id="row0">
+                <my-column-header id="r0h1" data="H1"></my-column-header>
+                <my-column-header id="r0h2" data="H2"></my-column-header>
+                <my-column-header id="r0h3" data="H3"></my-column-header>
+            </my-row>
+        </my-table-header>
+        <my-table-body id="tbody1">
+            <my-row id="row1">
+                <my-column id="r1c1" data="A"></my-column>
+                <my-column id="r1c2" data="B"></my-column>
+                <my-column id="r1c3" data="C"></my-column>
+            </my-row>
+            <my-row id="row2">
+                <my-column id="r2c1" data="D"></my-column>
+                <my-column id="r2c2" data="E"></my-column>
+                <my-column id="r2c3" data="F"></my-column>
+            </my-row>
+        </my-table-body>
+    </my-table>
+</div>
