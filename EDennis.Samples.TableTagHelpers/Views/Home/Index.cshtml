@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <my-table id="T1">
+        <my-table-header id="TH1">
+            <my-row id="R1">
+                <my-column-header id="1" data="Bob Header">Bob Greeting</my-column-header>
+                <my-column-header id="2" data="Alice Header">Alice Greeting</my-column-header>
+            </my-row>
+        </my-table-header>
+        <my-table-body id="TB1">
+            <my-row id="R1">
+                <my-column id="1" data="Hello, Bob">Hello, Bob</my-column>
+                <my-column id="2" data="Hello, Alice">Hello, Alice</my-column>
+            </my-row>
+            <my-row id="R2">
+                <my-column id="1" data="Hello, Bob">Hello, Bob</my-column>
+                <my-column id="4" data="Hello, Judy">Hello, Judy</my-column>
+            </my-row>
+        </my-table-body>
+    </my-table>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
