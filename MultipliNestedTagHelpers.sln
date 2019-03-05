@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplyNestedTagHelpers", "MultiplyNestedTagHelpers\MultiplyNestedTagHelpers.csproj", "{DCF355E8-6DA4-43A7-8BC5-CF2404A66AFC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDennis.Samples.TableTagHelpers", "EDennis.Samples.TableTagHelpers\EDennis.Samples.TableTagHelpers.csproj", "{BDA12CB3-BE03-4B0A-95F2-D53AE3FFAF69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.Samples.TableTagHelpers", "EDennis.Samples.TableTagHelpers\EDennis.Samples.TableTagHelpers.csproj", "{BDA12CB3-BE03-4B0A-95F2-D53AE3FFAF69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DCF355E8-6DA4-43A7-8BC5-CF2404A66AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DCF355E8-6DA4-43A7-8BC5-CF2404A66AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DCF355E8-6DA4-43A7-8BC5-CF2404A66AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DCF355E8-6DA4-43A7-8BC5-CF2404A66AFC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BDA12CB3-BE03-4B0A-95F2-D53AE3FFAF69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BDA12CB3-BE03-4B0A-95F2-D53AE3FFAF69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDA12CB3-BE03-4B0A-95F2-D53AE3FFAF69}.Release|Any CPU.ActiveCfg = Release|Any CPU

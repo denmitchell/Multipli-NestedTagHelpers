@@ -18,7 +18,9 @@ namespace EDennis.Samples.TableTagHelpers.TagHelpers {
 
             var output2 = context.Items[typeof(TagHelperOutputContext)] as TagHelperOutputContext;
             void w(string c, int t = 0) => output2.TagHelperOutput.Write(c, t);
-
+#if DEBUG
+            context.Items.Add(context.UniqueId, context.TagName);
+#endif
             w($"<tr id='{Id}'>",2);
             await output.GetChildContentAsync();
             w($"</tr>",2);
