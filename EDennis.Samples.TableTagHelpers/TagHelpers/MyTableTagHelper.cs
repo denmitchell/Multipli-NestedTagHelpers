@@ -21,13 +21,12 @@ namespace EDennis.Samples.TableTagHelpers.TagHelpers {
 
             //create context for this tag helper
             var tagHelperOutputContext = new TagHelperOutputContext { TagHelperOutput = output };
+
             context.Items.Add(typeof(TagHelperOutputContext), tagHelperOutputContext);
-#if DEBUG
             context.Items.Add(context.UniqueId, context.TagName);
-#endif
+
             void w(string c, int t = 0) => output.Write(c, t);
 
-            w("<br/>");
             w($"<table class='table' id={Id}>",1);
             await output.GetChildContentAsync();
             w($"</table>",1);
