@@ -93,6 +93,9 @@ ul.dropdown-menu{
     margin-top: 0 !important;
 }
 
+.navbar-icon {
+    margin-top: -7px !important;
+}
 .nav-link {
     padding: 10px !important;
 }
