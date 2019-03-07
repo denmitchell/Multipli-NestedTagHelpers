@@ -20,10 +20,13 @@
 <body>
     <header>
         <menu icon="images/logo.png" app-name="MyApp" >
-            <menu-item caption="Home" active="@{ViewData["Title"].ToString() == "Home"}" link="#"></menu-item>
+            <menu-item caption="Home" active="@{ViewData["Title"].ToString() == "Home"}" link="@Url.Action("Index","Home")"></menu-item>
             <menu-item caption="Reports">
-                <menu-item caption="Wait List">
-                    <menu-item caption="Report 1" link="#"></menu-item>
+                <menu-item caption="Basic Reports">
+                    <menu-item caption="Report 1">
+                        <menu-item caption="Report 1A" link="#"></menu-item>
+                        <menu-item caption="Report 1B" link="https://www.google.com"></menu-item>
+                    </menu-item>
                     <menu-item caption="Report 2" link="#"></menu-item>
                     <menu-item caption="Report 3" link="#"></menu-item>
                 </menu-item>
@@ -33,7 +36,7 @@
                     <menu-item caption="Report 6" link="#"></menu-item>
                 </menu-item>
             </menu-item>
-            <menu-item caption="Logoff" link="#"></menu-item>
+            <menu-item caption="Privacy"  active="@{ViewData["Title"].ToString() == "Privacy"}" link="@Url.Action("Privacy","Home")"></menu-item>
         </menu>
 
 
