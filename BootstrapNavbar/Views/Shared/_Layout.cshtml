@@ -19,7 +19,25 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <menu icon="images/logo.png" app-name="MyApp" >
+            <menu-item caption="Home" link="#"></menu-item>
+            <menu-item caption="Reports">
+                <menu-item caption="Wait List">
+                    <menu-item caption="Report 1" link="#"></menu-item>
+                    <menu-item caption="Report 2" link="#"></menu-item>
+                    <menu-item caption="Report 3" link="#"></menu-item>
+                </menu-item>
+                <menu-item caption="Other">
+                    <menu-item caption="Report 4" link="#"></menu-item>
+                    <menu-item caption="Report 5" link="#"></menu-item>
+                    <menu-item caption="Report 6" link="#"></menu-item>
+                </menu-item>
+            </menu-item>
+            <menu-item caption="Logoff" link="#"></menu-item>
+        </menu>
+
+
+        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BootstrapNavbar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -37,7 +55,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>*@
     </header>
     <div class="container">
         <partial name="_CookieConsentPartial" />
