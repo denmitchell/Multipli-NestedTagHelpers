@@ -20,7 +20,7 @@
 <body>
     <header>
         <menu icon="images/logo.png" app-name="MyApp" >
-            <menu-item caption="Home" link="#"></menu-item>
+            <menu-item caption="Home" active="@{ViewData["Title"].ToString() == "Home"}" link="#"></menu-item>
             <menu-item caption="Reports">
                 <menu-item caption="Wait List">
                     <menu-item caption="Report 1" link="#"></menu-item>

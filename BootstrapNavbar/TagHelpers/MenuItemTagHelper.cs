@@ -8,6 +8,7 @@ namespace BootstrapNavbar.TagHelpers {
 
     [HtmlTargetElement("menu-item", Attributes = "caption")]
     [HtmlTargetElement("menu-item", Attributes = "link")]
+    [HtmlTargetElement("menu-item", Attributes = "active")]
     [RestrictChildren("menu-item")]
     public class MenuItemTagHelper : TagHelper {
 
@@ -17,6 +18,8 @@ namespace BootstrapNavbar.TagHelpers {
         [HtmlAttributeName("link")]
         public string Link { get; set; }
 
+        [HtmlAttributeName("active")]
+        public bool Active { get; set; }
 
         public override async void Process(TagHelperContext context, TagHelperOutput output) {
 
@@ -36,7 +39,7 @@ namespace BootstrapNavbar.TagHelpers {
 
             if (!string.IsNullOrEmpty(Link)) {
                 if (menuDepth == 0) {
-                    w("<li class=\"nav-item\">", tabs);
+                    w($"<li class=\"nav-item{(Active ? " active" : "")}\">", tabs);
                     w($"<a class=\"nav-link\" href=\"{Link}\">{Caption}</a>", tabs + 1);
                 } else {
                     w("<li>", tabs);
